@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sayang Kamu</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/ff3a2a3758.js" crossorigin="anonymous"></script>
+
+	<style>
+		body{
+  background-color: #c2f2ff;
+}
+.container{
+    width:400px;
+    height:200px;
+    padding:20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -130px;
+    margin-left: -220px;
+}
+	</style>
+</head>
+<body>
+<div class="container">
+        <a href="doi3.html">
+        <center><button type="button" class="btn btn-lg btn-primary tombol py-4 px-5 shadow">Lanjutkan </button></center></a>
+    </div>
+</body>
+<script src="dist/sweetalert2.all.min.js"></script>
+<script >
+	setTimeout(function() {
+Swal.mixin({
+  input: 'text',
+  confirmButtonText: 'Next &rarr;',
+  progressSteps: ['1', ]
+}).queue([
+  {
+    title: 'Masukkan Nama Kamu dulu',
+  },
+]).then((result) => {
+  if (result.value) {
+    const answers = JSON.stringify(result.value)
+    Swal.fire({
+      html: `I Love you
+        ${answers}
+      `,
+      confirmButtonText: 'Loveyoutoo!'
+    })
+  }
+})
+
+
+
+		}, 1000);
+</script>
+</html>

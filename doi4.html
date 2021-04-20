@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sayang Kamu</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/ff3a2a3758.js" crossorigin="anonymous"></script>
+
+	<style>
+		body{
+  background-color: #c2f2ff;
+}
+.container{
+    width:400px;
+    height:200px;
+    padding:20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -130px;
+    margin-left: -220px;
+}
+	</style>
+</head>
+<body>
+</body>
+<script src="dist/sweetalert2.all.min.js"></script>
+<script >
+	setTimeout(function() {
+Swal.fire({
+  title: 'Oh iya nanti sore aku mau ngajak kamu nih',
+  showCancelButton: true,
+  cancelButtonText: 'Ngga mau ikut',
+  confirmButtonColor: '#3085d6',
+  cancelButtonColor: '#d33',
+  confirmButtonText: 'Mau ikut'
+}).then((result) => {
+  if (result.isConfirmed) {
+Swal.fire({
+  title: 'Jadi nanti sore aku mau ngajak kamu berburu takjil sama buka bersama',
+  confirmButtonColor: '#3085d6',
+  cancelButtonColor: '#d33',
+  confirmButtonText: 'Oke'
+}).then((result) => {
+  if (result.isConfirmed) {
+Swal.fire({
+  title: 'Tunggu depan rumah yaa',
+  confirmButtonColor: '#3085d6',
+  cancelButtonColor: '#d33',
+  confirmButtonText: 'Oke'
+}).then((result) => {
+  if (result.isConfirmed) {
+    Swal.fire({
+  title: 'Habis ini tak jemput sayanggg',
+  confirmButtonColor: '#3085d6',
+  cancelButtonColor: '#d33',
+  confirmButtonText: 'Oke Sayangku'
+}).then((result) => {
+  if (result.isConfirmed) {
+Swal.fire({
+  imageUrl: 'https://1.bp.blogspot.com/-7ugIntZnCoE/YH6LTgOrMpI/AAAAAAAAAZQ/6YjcoyU2K6ACIgH9Ex7fqoDtVFvWEW1sQCLcBGAsYHQ/s819/otw.jpg',
+  imageWidth: 400,
+  imageHeight: 200,
+  imageAlt: 'Custom image',
+})
+  }
+})
+  }
+})
+  }
+})
+  }
+})
+
+
+
+		}, 1000);
+</script>
+</html>
